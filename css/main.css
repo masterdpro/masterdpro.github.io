@@ -73,6 +73,11 @@ h4 {
   padding-bottom: 0.5rem;
 }
 
+.section_mtitle {
+  font-size: 2.2rem;
+  padding-bottom: 10rem;
+}
+
 .section_utitle {
   font-size: 1.5rem;
   padding-bottom: 1rem;
@@ -81,6 +86,22 @@ h4 {
 .section_text {
   font-size: 1.2rem;
 }
+
+.section_stext {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.section_sstext {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.section_ssstext {
+  font-size: 1.2rem;
+  padding-bottom: 4rem;
+}
+
 
 .section_sub {
   font-size: 0.8rem;
