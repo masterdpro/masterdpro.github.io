@@ -1,6 +1,16 @@
 const keys = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 
+Array.prototype.last = function () {
+  return this[this.length - 1];
+};
+let score = 0;
 const timestamps = [];
+
+const scoreElement = document.getElementById("score");
+
+resetGame();
+
+
 
 timestamps.unshift(getTimestamp());
 
@@ -23,6 +33,9 @@ function targetRandomKey() {
 function getTimestamp() {
   return Math.floor(Date.now() / 1000)
 }
+function resetGame() {
+  scoreElement.innerText = 0;
+}
 
 document.addEventListener("keyup", event => {
   const keyPressed = String.fromCharCode(event.keyCode);
@@ -33,7 +46,17 @@ document.addEventListener("keyup", event => {
   keyElement.addEventListener('animationend', () => {
     keyElement.classList.remove("hit")
   })
+
+  if ( keyPressed != highlightedKey.innerHTML) {
+    score = 0;
+    scoreElement.innerText = score;
+  }
   
+ if ( keyPressed === highlightedKey.innerHTML ) {
+  score += 1;
+  scoreElement.innerText = score;
+ }
+
   if (keyPressed === highlightedKey.innerHTML) {
     timestamps.unshift(getTimestamp());
     const elapsedTime = timestamps[0] - timestamps[1];
