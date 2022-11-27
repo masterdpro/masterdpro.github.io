@@ -1,0 +1,207 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@masterdpro0 
+masterdpro0
+/
+masterdpro0.github.io
+Private
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+masterdpro0.github.io/css/dactilo.css
+@masterdpro0
+masterdpro0 Add files via upload
+Latest commit 9a0ad6c on Sep 23
+ History
+ 1 contributor
+162 lines (144 sloc)  3.24 KB
+
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  background: #000000;
+}
+
+.glow-btn {
+  cursor: pointer;
+  font-family: 'Kufam', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  padding: 19px 85px 20px 85px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 0;
+  background-color: transparent;
+  color: transparent;
+  transition: all 0.7s ease-in-out;
+}
+
+.blue {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #0033ff, 1px 1px 1.5px #0033ff;
+  box-shadow: 
+    inset 1px 1px 10px 1px #0033ff,
+    inset 1px 1px 20px 5px #1c49ff,
+    0 0 10px 1px #0033ff,
+    0 0 40px 2px #1c49ff;
+}
+
+.blue:hover {
+  box-shadow: 
+    inset 1px 1px 10px 1px #0033ff,
+    inset 1px 1px 10px 5px #1c49ff,
+    0 0 10px 1px #0033ff,
+    0 0 20px 2px #1c49ff;
+}
+
+.green {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #10ff00, 1px 1px 1.5px #10ff00;
+  box-shadow: 
+    inset 1px 1px 10px 1px #10ff00,
+    inset 1px 1px 20px 5px #39ff2b,
+    0 0 10px 1px #10ff00,
+    0 0 40px 2px #39ff2b;
+}
+
+.green:hover {
+  box-shadow: 
+    inset 1px 1px 10px 1px #10ff00,
+    inset 1px 1px 10px 5px #39ff2b,
+    0 0 10px 1px #10ff00,
+    0 0 20px 2px #39ff2b;
+}
+
+.red {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #ff2100, 1px 1px 1.5px #ff2100;
+  box-shadow: 
+    inset 1px 1px 10px 1px #ff2100,
+    inset 1px 1px 20px 5px #ff3f26,
+    0 0 10px 1px #ff2100,
+    0 0 40px 2px #ff3f26;
+}
+
+.red:hover {
+  box-shadow: 
+    inset 1px 1px 10px 1px #ff2100,
+    inset 1px 1px 10px 5px #ff3f26,
+    0 0 10px 1px #ff2100,
+    0 0 20px 2px #ff3f26;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #191919;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .main-text {
+  position: absolute;
+  top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: start;
+}
+
+.tooltip .sub-text {
+  position: absolute;
+  bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #c6c6c6;
+  text-align: start;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  height: 50px;
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 10%;
+  margin-left: -65px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  box-shadow: 1px 1px 10px 2px #4cbdff; 
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #141414 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+masterdpro0.github.io/dactilo.css at main · masterdpro0/masterdpro0.github.io
